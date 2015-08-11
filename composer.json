@@ -1,0 +1,46 @@
+{
+    "name": "smoothphp/cqrs-es-framework-bundle",
+    "description": "Smooth Php CRQS Event Sourcing Framework Symfony2 integration bundle",
+    "keywords": [
+        "smooth php",
+        "Command Bus",
+        "Event Sourcing",
+        "CRQS"
+    ],
+    "homepage": "https://github.com/SmoothPhp/CQRS-ES-Framework-Bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jrdn@jrdnhannah.co.uk",
+            "email": "jrdn@smoothphp.com",
+            "homepage": "https://smoothphp.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "symfony/symfony": "~2.3",
+        "smoothphp/cqrs-es-framework": "@stable"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmoothPhp\\SymfonyBridge\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SmoothPhp\\SymfonyBridge\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
