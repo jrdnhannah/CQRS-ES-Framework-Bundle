@@ -1,5 +1,7 @@
 <?php namespace SmoothPhp\SymfonyBridge\Bundle;
 
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+
 /**
  * Class Bundle
  *
@@ -7,6 +9,14 @@
  */
 final class Bundle extends \Symfony\Component\HttpKernel\Bundle\Bundle
 {
+    /**
+     * {@inheritDoc}
+     */
+    public function build(ContainerBuilder $container)
+    {
+        $container->addCompilerPass(new Compiler\LoadEventListeners);
+    }
+
     /**
      * {@inheritDoc}
      */
