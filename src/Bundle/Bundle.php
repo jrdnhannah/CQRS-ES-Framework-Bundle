@@ -15,6 +15,7 @@ final class Bundle extends \Symfony\Component\HttpKernel\Bundle\Bundle
     public function build(ContainerBuilder $container)
     {
         $container->addCompilerPass(new Compiler\LoadEventListeners);
+        $container->addCompilerPass(new Compiler\LoadCommandHandlers);
     }
 
     /**

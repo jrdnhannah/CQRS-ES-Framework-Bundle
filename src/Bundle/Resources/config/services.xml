@@ -6,5 +6,6 @@
         >
     <imports>
         <import resource="services/event-dispatcher.xml"/>
+        <import resource="services/command-bus.xml"/>
     </imports>
 </container>
