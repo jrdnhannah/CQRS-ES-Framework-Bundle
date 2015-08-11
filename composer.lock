@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "083eb031eb2b4826f967b6be0bd8d9b8",
+    "hash": "3909a03c16fb33510f1412242e29fbbc",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -510,16 +510,16 @@
         },
         {
             "name": "smoothphp/cqrs-es-framework",
-            "version": "v0.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SmoothPhp/CQRS-ES-Framework.git",
-                "reference": "8cc1775f874050862523b1de2cf79f47006d5930"
+                "reference": "4f3bcc62f831b2242fd455ff4c3cafca77fe8a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SmoothPhp/CQRS-ES-Framework/zipball/8cc1775f874050862523b1de2cf79f47006d5930",
-                "reference": "8cc1775f874050862523b1de2cf79f47006d5930",
+                "url": "https://api.github.com/repos/SmoothPhp/CQRS-ES-Framework/zipball/4f3bcc62f831b2242fd455ff4c3cafca77fe8a0a",
+                "reference": "4f3bcc62f831b2242fd455ff4c3cafca77fe8a0a",
                 "shasum": ""
             },
             "require": {
@@ -563,7 +563,7 @@
                 "event sourcing",
                 "smooth php"
             ],
-            "time": "2015-08-10 19:44:52"
+            "time": "2015-08-11 15:03:34"
         },
         {
             "name": "symfony/symfony",
@@ -1650,11 +1650,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "smoothphp/cqrs-es-framework": 0
+        "smoothphp/cqrs-es-framework": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.0"
