@@ -2,8 +2,8 @@
 
 use ReflectionProperty;
 use PHPUnit_Framework_TestCase as TestCase;
-use SmoothPhp\EventDispatcher\SimpleEventDispatcher;
 use Symfony\Component\DependencyInjection\Definition;
+use SmoothPhp\EventDispatcher\ProjectEnabledDispatcher;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use SmoothPhp\SymfonyBridge\Bundle\Compiler\LoadEventListeners;
 use SmoothPhp\SymfonyBridge\Test\Stub\EventDispatcher\ListenerStub;
@@ -23,7 +23,7 @@ final class LoadEventListenersTest extends TestCase
         $this->containerBuilder = new ContainerBuilder;
         $this->containerBuilder->setDefinition(
             'smooth_php.event_dispatcher',
-            new Definition(SimpleEventDispatcher::class)
+            new Definition(ProjectEnabledDispatcher::class)
         );
     }
 
@@ -43,7 +43,7 @@ final class LoadEventListenersTest extends TestCase
 
         $resolver = $this->containerBuilder->get('smooth_php.event_dispatcher');
 
-        $refl = new ReflectionProperty(SimpleEventDispatcher::class, 'listeners');
+        $refl = new ReflectionProperty(ProjectEnabledDispatcher::class, 'listeners');
         $refl->setAccessible(true);
 
         $this->assertSame(1, count($refl->getValue($resolver)));
