@@ -3,11 +3,13 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services
         http://symfony.com/schema/dic/services/services-1.0.xsd"
-        >
-    <imports>
-        <import resource="services/event-dispatcher.xml"/>
-        <import resource="services/command-bus.xml"/>
-        <import resource="services/event-bus.xml"/>
-        <import resource="services/serializer.xml"/>
-    </imports>
+>
+    <parameters>
+        <parameter key="smooth_php.serializer.class">SmoothPhp\Serializer\ObjectSelfSerializer</parameter>
+    </parameters>
+
+    <services>
+        <service id="smooth_php.event_dispatcher"
+                 class="%smooth_php.serializer.class%"/>
+    </services>
 </container>
