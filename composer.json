@@ -20,7 +20,7 @@
     "require": {
         "php": ">=5.5.0",
         "symfony/symfony": "~2.3",
-        "smoothphp/cqrs-es-framework": "dev-master"
+        "smoothphp/cqrs-es-framework": "~1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
