@@ -5,7 +5,7 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd"
         >
     <parameters>
-        <parameter key="smooth_php.event_dispatcher.class">SmoothPhp\EventDispatcher\SimpleEventDispatcher</parameter>
+        <parameter key="smooth_php.event_dispatcher.class">SmoothPhp\EventDispatcher\ProjectEnabledDispatcher</parameter>
     </parameters>
 
     <services>
