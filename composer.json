@@ -1,11 +1,11 @@
 {
     "name": "smoothphp/cqrs-es-framework-bundle",
-    "description": "Smooth Php CRQS Event Sourcing Framework Symfony2 integration bundle",
+    "description": "Smooth Php CQRS Event Sourcing Framework Symfony2 integration bundle",
     "keywords": [
         "smooth php",
         "Command Bus",
         "Event Sourcing",
-        "CRQS"
+        "CQRS"
     ],
     "homepage": "https://github.com/SmoothPhp/CQRS-ES-Framework-Bundle",
     "license": "MIT",
